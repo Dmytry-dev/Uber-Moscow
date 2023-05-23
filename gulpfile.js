@@ -1,11 +1,11 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass')); 
+const gulp = require('gulp'); 
 const rename = require('gulp-rename')
 const cleanCSS = require('gulp-clean-css')
 const browserSync = require('browser-sync')
 const autoprefixer = require('gulp-autoprefixer')
 const htmlmin = require('gulp-htmlmin')
 const imagemin = require('gulp-imagemin')
+const sass = require('gulp-sass')(require('sass'));
 
 
 // Сервер
