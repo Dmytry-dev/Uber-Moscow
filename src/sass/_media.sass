@@ -24,14 +24,14 @@
     nav
         position: absolute
         width: 45%
-        height: 100vh
+        height: 300vh
         position: fixed
         transition: .6s
     .menu 
         flex-direction: column
-        height: 450px
-        padding: 70px 70px
-
+        padding: 70px 0 0 70px
+        &_item
+            margin-top: 20px
         &_item__line
             visibility: hidden
     .menu_close
@@ -53,6 +53,91 @@
         font-size: 11px
         margin: 5px
         margin-top: 17px
-
 @media (max-width: 769px)
+    .choice 
+        .choice_block 
+            .auto
+                max-width: 510px
+    footer
+        height: 300px
+        .footer_title
+            display: flex
+            width: 300px
+            margin: 0 auto
+            padding: 5px
+            justify-content: space-between
+            text-align: center
+        .footer_title_item
+            font-weight: 300
+            font-size: 15px
+            margin: 5px
+            margin-top: 30px
+            text-transform: uppercase
+            color: #070716
+        .soc_media
+            bottom: 40px
+        .stores
+            top: auto
+            left: 87%
+            right: 10px
+            bottom: 0px
+    .descr
+        .item_text
+            text-align: center
+        .img_item
+            margin-top: 25px
+    .subheader_official
+        display: none
+    .subheader_link
+        margin-top: 36px
+        img
+            width: 200px
+    .sub_btn
+        position: absolute
+        top: 30px
+    .subheader
+        height: 100px
+    .call_text
+        display: none
+    .call_number
+        display: block
+        margin-top: 22px
 @media (max-width: 577px)
+    .choice 
+        .choice_block 
+            .auto 
+                max-width: 250px
+    .call_number
+        display: none
+    .subheader_link
+        margin-top: 13px
+    .sub_btn
+        left: 23px
+    footer
+        height: 400px
+        .stores
+            left: 50%
+            transform: translateX(-30%)
+            bottom: 20px
+        .soc_media
+            position: absolute
+            margin-top: 50px
+            width: 156px
+            transform: translateX(-50%)
+            bottom: 130px
+            left: 50%
+            .footer_title
+                width: 275px
+
+        .line
+            width: 264px
+    .terms_header
+        font-size: 23px
+    .promo
+        .promo_header
+            font-size: 39px
+    .mobile_prog 
+        .mobile_item
+            width: 300px
+    nav
+        width: 65%
