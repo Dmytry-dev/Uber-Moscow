@@ -10,9 +10,49 @@
     .subheader
         .call_number
             font-size: 18px
-    .menu_item
-        &:after
-            right: -16px
 @media (max-width: 993px)
+    .active
+        left: 0%
+    .menu__overlay
+        display: block
+    .no-active 
+        left: -130%
+    .subheader_official
+        font-size: 12px
+    .hamburger
+        display: flex
+    nav
+        position: absolute
+        width: 45%
+        height: 100vh
+        position: fixed
+        transition: .6s
+    .menu 
+        flex-direction: column
+        height: 450px
+        padding: 70px 70px
+
+        &_item__line
+            visibility: hidden
+    .menu_close
+        display: block
+
+    .subheader
+        transform: translateY(0px)
+    .call_text
+        font-size: 11px
+    .call_number
+        font-size: 16px
+    .hamburger
+        z-index: 3
+    .footer_title_item
+        font-size: 12px
+    .footer_text
+        text-align: center
+    .footer_text_item
+        font-size: 11px
+        margin: 5px
+        margin-top: 17px
+
 @media (max-width: 769px)
 @media (max-width: 577px)

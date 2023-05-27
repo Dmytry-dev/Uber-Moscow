@@ -1,11 +1,47 @@
+
 header 
 	position: relative 
-nav 
-	position: fixed 
+	transition: all .6s
+.menu__overlay
+	display: none
+	position: fixed
+	width: 100%
+	height: 100%
+	z-index: 4
+	background-color: black
+	opacity: .75
+.menu_close
+	display: none
+	position: absolute
+	right: 25px
+	top: 25px
+	cursor: pointer
+	
+.hamburger 
+	display: none
+	flex-direction: column
+	justify-content: space-between
+	position: absolute
+	z-index: 5
+	right: 30px
+	top: 20px
+	align-items: flex-end
+	height: 22px
+	cursor: pointer
+	transition: all .6s
+	&_line
+		width: 35px
+		height: 3px
+		display: block
+		background: white
+nav  
+	position: fixed
 	width: 100% 
 	height: 50px 
 	background: #212121 
-	z-index: 3
+	z-index: 5
+
+
 .menu 
 	display: flex 
 	justify-content: space-between 
@@ -14,29 +50,25 @@ nav
 	list-style-type: none 
 	.menu_item 
 		position: relative
-		// border-right: 2px dotted black 
-		// padding-right: 25px 
-		&:after
-			content: " "
+		&__line
 			display: block
-			height: 100%
-			border: 2px dotted black
-			position: absolute
-			top: 0%
-			right: -31px	
+			height: auto
+			border: 2px dotted black	
 		.menu_link 
 			font-weight: 300 
 			font-size: 15px 
 			line-height: 15px 
 			color: #FFFFFF 
 			text-decoration: none 
+
 	.menu_item2 
 		.menu_link 
 			font-weight: 300 
 			font-size: 15px 
 			line-height: 15px 
 			color: #FFFFFF 
-			text-decoration: none 
+			text-decoration: none
+	 
 .subheader 
 	transform: translateY(49px) 
 	position: absolute 
@@ -485,6 +517,7 @@ footer
 	.footer_title
 		display: flex
 		justify-content: space-between
+		text-align: center
 		&_item
 			font-weight: 300
 			font-size: 15px
